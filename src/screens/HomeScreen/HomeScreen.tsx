@@ -1,10 +1,9 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { View } from 'react-native';
 import { styles } from './style';
 import { CabecalhoPagina } from '../../components/CabecalhoPagina/CabecalhoPagina';
 import { Skill } from '../../components/Skill/Skill';
 import { BotaoNavegacao } from '../../components/BotaoNavegacao/BotaoNavegacao';
-
 
 export function HomeScreen() {
   return (
@@ -19,7 +18,7 @@ export function HomeScreen() {
       </View>
 
       <View style={styles.botaoNavegacaoContainer}>
-        <BotaoNavegacao texto='Ver mídias sociais' icon='location-exit' />
+        <BotaoNavegacao screenToNavigate='main' texto='Ver mídias sociais' icon='location-exit' />
       </View>
     </View>
   );
