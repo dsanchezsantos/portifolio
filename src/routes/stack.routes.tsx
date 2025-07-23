@@ -1,10 +1,26 @@
-import React from 'react';
-import { Text, View } from 'react-native';
+import { createStackNavigator } from "@react-navigation/stack";
+import { MainScreen } from "../screens/MainScreen/MainScreen";
+import { HomeScreen } from "../screens/HomeScreen/HomeScreen";
 
-export function Routes() {
+const {Screen, Navigator} = createStackNavigator()
+
+export const StackNavigator = () => {
   return (
-    <View>
-        <Text>Routes</Text>
-    </View>
-  );
+    <Navigator>
+      <Screen
+        name="main"
+        component={MainScreen}
+        options={{
+          headerShown: false
+        }}
+      />
+      <Screen
+        name="home"
+        component={HomeScreen}
+        options={{
+          headerShown: false
+        }}
+      />
+    </Navigator>
+  )
 }

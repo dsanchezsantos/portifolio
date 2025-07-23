@@ -1,26 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { Image, Text, View } from 'react-native';
-import { styles } from './styles';
-import foto from './../../../assets/perfil.jpg'
+import { styles } from './styles'
 import { BotaoMain } from '../../components/BotaoMain/BotaoMain';
 import { BotaoNavegacao } from '../../components/BotaoNavegacao/BotaoNavegacao';
+import { CabecalhoPagina } from '../../components/CabecalhoPagina/CabecalhoPagina';
 
 export function MainScreen() {
   return (
     <View style={styles.container}>
       {/* Foto */}
-      <View style={styles.imageBackground}>
-        <Image
-          style={styles.foto}
-          source={foto}
-        />
-      </View>
-
-      {/* Nome */}
-      <View style={styles.nomeContainer}>
-        <Text style={styles.nome}>Diogo Sanchez</Text>
-      </View>
+      <CabecalhoPagina texto='Diogo Sanchez' />
 
       {/* Botões */}
       <View style={styles.botoesContainer}>
@@ -33,7 +23,6 @@ export function MainScreen() {
         <BotaoNavegacao texto='Conhecer mais' icon='location-enter' />
       </View>
 
-      <StatusBar style="light" />
     </View>
   );
 }
