@@ -15,7 +15,7 @@ O aplicativo foi projetado para ser intuitivo e completo, incluindo as seguintes
 
 | Tela Inicial | Habilidades |
 | :---: | :---: |
-| ![Imagem da Tela Inicial](https://placehold.co/300x600/2d3748/ffffff?text=Tela+Inicial) | ![Imagem da Tela de Projetos](https://placehold.co/300x600/2d3748/ffffff?text=Tela+de+Projetos) |
+| ![Imagem da Tela Inicial](assets/prints/print1.png) | ![Imagem da Tela de Projetos](assets/prints/print2.png) |
 
 ## 💻 Tecnologias Utilizadas
 
